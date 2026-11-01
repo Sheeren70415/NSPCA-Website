@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Animal Welfare Projects | NSPCA South Africa</title>
+
+    <meta name="description"
+        content="Explore animal welfare awareness, cruelty prevention and community involvement projects supporting the NSPCA's mission to protect animals in South Africa.">
+
+    <meta name="keywords"
+        content="NSPCA, animal welfare, animal cruelty prevention, animal protection, South Africa, volunteering">
+
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <!-- Top Bar -->
+    <div class="top-bar">
+        <div class="container">
+            <span>National Council of SPCAs • South Africa</span>
+            <span>Animal Welfare • Compassion • Action</span>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <header>
+        <nav class="navbar container">
+
+            <a href="index.html" class="logo">
+                <span class="logo-icon">🐾</span>
+
+                <span>
+                    <strong>NSPCA</strong>
+                    <small>Protecting Animals</small>
+                </span>
+            </a>
+
+            <button class="menu-button"
+                    onclick="toggleMenu()"
+                    aria-label="Open navigation menu"
+                    aria-expanded="false"
+                    aria-controls="navLinks">
+                ☰
+            </button>
+
+            <div class="nav-links" id="navLinks">
+                <a href="index.html">Home</a>
+                <a href="about.html">About Us</a>
+                <a href="what-we-do.html">What We Do</a>
+                <a href="report.html">Report Cruelty</a>
+                <a href="donate.html">Donate</a>
+             <a href="./projects.html">Projects</a>
+                <a href="news.html">News</a>
+                <a href="get-involved.html">Get Involved</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- Page Introduction -->
+    <section class="page-header">
+        <div class="container">
+
+            <h1>Our Animal Welfare Projects</h1>
+
+            <p>
+                Discover how animal welfare awareness, cruelty prevention
+                and community participation can help protect animals
+                throughout South Africa.
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Project Introduction -->
+    <section class="section">
+        <div class="container">
+
+            <h2>Making a Difference for Animals</h2>
+
+            <p>
+                The National Council of SPCAs works to prevent cruelty
+                and promote the welfare of animals. The following
+                project areas demonstrate ways a website can inform
+                the public and encourage people to support animal welfare.
+            </p>
+
+            <div class="project-grid">
+
+                <!-- Project 1 -->
+                <div class="card">
+
+                    <div class="card-icon">🐕</div>
+
+                    <h3>Animal Welfare Awareness</h3>
+
+                    <p>
+                        Educate the public about responsible animal care,
+                        animal welfare and the importance of treating
+                        animals with compassion.
+                    </p>
+
+                    <button class="project-button"
+                            onclick="toggleProject('awareness', this)"
+                            aria-expanded="false"
+                            aria-controls="awareness">
+                        Learn More
+                    </button>
+
+                    <div id="awareness" hidden>
+                        <p>
+                            Visitors can learn about providing animals
+                            with appropriate food, clean water, shelter,
+                            veterinary care and protection from suffering.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Project 2 -->
+                <div class="card">
+
+                    <div class="card-icon">🚨</div>
+
+                    <h3>Preventing Animal Cruelty</h3>
+
+                    <p>
+                        Help people understand animal cruelty and
+                        encourage responsible reporting when an animal
+                        may be suffering or neglected.
+                    </p>
+
+                    <button class="project-button"
+                            onclick="toggleProject('cruelty', this)"
+                            aria-expanded="false"
+                            aria-controls="cruelty">
+                        Learn More
+                    </button>
+
+                    <div id="cruelty" hidden>
+                        <p>
+                            Members of the public should provide accurate
+                            information when reporting suspected cruelty.
+                            Reports should be directed to the appropriate
+                            NSPCA or local SPCA office.
+                        </p>
+
+                        <a href="report.html">
+                            Visit the Report Cruelty page
+                        </a>
+                    </div>
+
+                </div>
+
+                <!-- Project 3 -->
+                <div class="card">
+
+                    <div class="card-icon">🤝</div>
+
+                    <h3>Community Involvement</h3>
+
+                    <p>
+                        Encourage members of the public to participate
+                        in animal welfare activities and support
+                        organisations working to protect animals.
+                    </p>
+
+                    <button class="project-button"
+                            onclick="toggleProject('community', this)"
+                            aria-expanded="false"
+                            aria-controls="community">
+                        Learn More
+                    </button>
+
+                    <div id="community" hidden>
+                        <p>
+                            People can explore opportunities to volunteer,
+                            support fundraising activities and share
+                            responsible animal welfare information.
+                        </p>
+
+                        <a href="get-involved.html">
+                            Find Ways to Get Involved
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- How the Public Can Help -->
+    <section class="section grey-section">
+        <div class="container">
+
+            <h2>How You Can Help</h2>
+
+            <p>
+                Protecting animals requires awareness, responsible action
+                and public participation.
+            </p>
+
+            <div class="project-grid">
+
+                <div class="card">
+                    <h3>Report Suspected Cruelty</h3>
+
+                    <p>
+                        Help animals by reporting suspected cruelty
+                        or neglect through the appropriate channels.
+                    </p>
+
+                    <a href="report.html">Report Animal Cruelty</a>
+                </div>
+
+                <div class="card">
+                    <h3>Support Animal Welfare</h3>
+
+                    <p>
+                        Learn how donations and other forms of support
+                        can contribute to animal welfare efforts.
+                    </p>
+
+                    <a href="donate.html">Support the NSPCA</a>
+                </div>
+
+                <div class="card">
+                    <h3>Get Involved</h3>
+
+                    <p>
+                        Explore opportunities to participate in
+                        activities that promote responsible animal care.
+                    </p>
+
+                    <a href="get-involved.html">Get Involved</a>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Website KPIs -->
+    <section class="section">
+        <div class="container">
+
+            <h2>Website Performance Indicators</h2>
+
+            <p>
+                The following key performance indicators (KPIs) can
+                help evaluate how effectively the website informs
+                visitors and connects them with animal welfare resources.
+            </p>
+
+            <div class="table-container">
+
+                <table>
+
+                    <thead>
+                        <tr>
+                            <th>KPI</th>
+                            <th>What It Measures</th>
+                            <th>Why It Matters</th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr>
+                            <td>Donation Link Clicks</td>
+                            <td>Visits to the donation page</td>
+                            <td>
+                                Helps assess public interest in
+                                supporting animal welfare.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Animal Cruelty Report Page Visits</td>
+                            <td>
+                                Visits to the reporting information page
+                            </td>
+                            <td>
+                                Indicates interest in finding information
+                                about reporting suspected cruelty.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Website Visitors</td>
+                            <td>Number of website visits</td>
+                            <td>
+                                Helps measure the website's reach.
+                            </td>
+                        </tr>
+
+                        <tr>
+                            <td>Get Involved Link Clicks</td>
+                            <td>
+                                Visits to the involvement page
+                            </td>
+                            <td>
+                                Helps assess interest in participating
+                                in animal welfare activities.
+                            </td>
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <p>
+                <small>
+                    Note: These are proposed website performance
+                    indicators. Actual results require website
+                    analytics or appropriate tracking tools.
+                </small>
+            </p>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+
+            <h3>NSPCA</h3>
+
+            <p>
+                Preventing cruelty and promoting animal welfare.
+            </p>
+
+            <p>
+                <a href="index.html">Home</a> |
+                <a href="projects.html">Projects</a> |
+                <a href="contact.html">Contact</a>
+            </p>
+
+            <p>
+                &copy; <span id="currentYear"></span> NSPCA Website Project.
+            </p>
+
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="script.js"></script>
+
+    <script>
+        // Expand or collapse project information.
+        function toggleProject(projectId, button) {
+            const project = document.getElementById(projectId);
+
+            if (!project) {
+                return;
+            }
+
+            const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+            project.hidden = isExpanded;
+
+            button.setAttribute("aria-expanded", String(!isExpanded));
+
+            button.textContent = isExpanded ? "Learn More" : "Show Less";
+        }
+
+        // Display the current year in the footer.
+        document.getElementById("currentYear").textContent =
+            new Date().getFullYear();
+    </script>
+
+</body>
+</html>
