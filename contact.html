@@ -48,7 +48,7 @@ onclick="toggleMenu()">☰</button>
 <a href="what-we-do.html">What We Do</a>
 <a href="report.html">Report Cruelty</a>
 <a href="donate.html">Donate</a>
-<a href="projects.html">Projects</a>
+<a href="./projects.html">Projects</a>
 <a href="news.html">News</a>
 <a href="get-involved.html">Get Involved</a>
 <a href="contact.html">Contact</a>
@@ -200,3 +200,51 @@ Preventing cruelty and promoting animal welfare.
 </body>
 
 </html>
+
+<section class="section">
+    <div class="container">
+
+        <h2>Find the NSPCA</h2>
+
+        <iframe
+            title="Map showing the NSPCA in South Africa"
+            src="https://www.google.com/maps?q=National%20Council%20of%20SPCAs%20South%20Africa&output=embed"
+            width="100%"
+            height="400"
+            style="border:0;"
+            loading="lazy"
+            allowfullscreen>
+        </iframe>
+
+    </div>
+</section>
+
+<form class="demo-form ajax-form"
+      action="https://formspree.io/f/YOUR_FORM_ID"
+      method="POST">
+
+    <label for="name">Full Name</label>
+    <input type="text" id="name" name="name" required minlength="2">
+
+    <label for="email">Email Address</label>
+    <input type="email" id="email" name="email" required>
+
+    <label for="subject">Message Subject</label>
+    <select id="subject" name="subject" required>
+        <option value="">Select a subject</option>
+        <option value="Animal Welfare">Animal Welfare</option>
+        <option value="Volunteering">Volunteering</option>
+        <option value="Donations">Donations</option>
+        <option value="General Enquiry">General Enquiry</option>
+    </select>
+
+    <label for="message">Your Message</label>
+    <textarea id="message" name="message" required minlength="10"></textarea>
+
+    <button type="submit" class="button button-primary">
+        Send Message
+    </button>
+
+    <p class="form-message" aria-live="polite"></p>
+
+</form>
